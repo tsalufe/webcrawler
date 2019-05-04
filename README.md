@@ -19,7 +19,7 @@ python3 webcrawl.py [url] [cssselector]
 ```
 from webcrawler import FirefoxCrawler
 
-driver = FirefoxCrawler.loadPage(url)
+driver = FirefoxCrawler.load_page(url)
 videos = driver.find_element_by_css_selector('video')
 video_srcs = [ video.get_attribute('src') for video in videos ]
 ```
