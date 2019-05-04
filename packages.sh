@@ -1,9 +1,11 @@
 #apt packages
-# sudo apt install -y python3.7 python3-pip
-alias python3=python3.7
-pip3 install --upgrade pip
+sudo apt update
+sudo apt -y install firefox
+sudo apt install -y python3.7 python3-pip
 
 #pip3 packages
+alias python3=python3.7
+pip3 install --upgrade pip
 pip3 install django
 pip3 install selenium
 if [[ "$(uname -s)" == Linux* ]]; then
@@ -15,5 +17,3 @@ tar -xvf geckodriver*.tar.gz
 chmod +x geckodriver
 mv geckodriver /usr/local/bin/
 rm geckodriver*.tar.gz
-# sudo apt update
-# sudo apt -y install firefox
