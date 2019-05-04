@@ -7,5 +7,5 @@ attribute = sys.argv[3]
 
 crawler = FirefoxCrawler(headless = False)
 driver = crawler.load_page(url)
-video = driver.find_element_by_css_selector(cssselector)
-print(video.get_attribute(attribute))
+element = driver.find_element_by_css_selector(cssselector)
+print(element.get_attribute(attribute))
