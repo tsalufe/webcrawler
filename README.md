@@ -1,25 +1,27 @@
 # webcrawler
 Crawl web page to find your content using selenium and web driver.
+
 To install the package
 ```
 pip install git+https://github.com/tsalufe/webcrawler
 ```
+.
 
-#requirement
+# requirement
 Framework: Python3.7, selenium
 Memoery: Your local, docker or server should have 2+GB memory as required by firefox that I am currently using.
 
-#installation of dependent apt+pip3 packages
+# installation of dependent apt+pip3 packages
 ```
 bash packages.sh
 ```
 
-#run
+# out of box command
 ```
 python3 crawl.py [url] [cssselector]
 ```
 
-#usage
+# extended usage
 ```
 from webcrawler import FirefoxCrawler
 
